@@ -1,0 +1,130 @@
+/* --- GLOBAL STYLES (Requirement: 2 different fonts - Font 1: Arial/Sans-serif) --- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Requirement: Font Color 1: Dark Grey */
+    line-height: 1.6;
+}
+
+/* Requirement: 2 different fonts - Font 2: Georgia/Serif for headers */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #003366; /* Requirement: Font Color 2: Dark Blue */
+    text-align: center;
+}
+
+/* --- 3 DIFFERENT BACKGROUND COLORS --- */
+
+/* Background 1: Home Page (Light Blue) */
+#home-page {
+    background-color: #e6f7ff;
+}
+
+/* Background 2: Resume Page (Light Grey) */
+#resume-page {
+    background-color: #f4f4f4;
+}
+
+/* Background 3: Projects Page (Light Beige) */
+#projects-page {
+    background-color: #fff8e1;
+}
+
+/* --- NAVIGATION BAR --- */
+nav {
+    background-color: #003366;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* Above and Beyond 1: Transition/Hover Effect */
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Gold hover color */
+}
+
+/* --- LAYOUT CONTAINERS & DIVISIONS --- */
+.main-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Division styling for all three pages */
+.content-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid #003366;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+/* --- IMAGES (To make it smaller) --- */
+.profile-pic {
+    /* Set to a smaller size, feel free to adjust 200px */
+    max-width: 200px; 
+    height: auto;
+    border: 4px solid #003366;
+    border-radius: 50%; /* Makes the photo circular */
+    display: block;
+    margin: 20px auto;
+}
+
+/* --- TABLES (Requirement: 2 Tables with formatting) --- */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+.styled-table th, .styled-table td {
+    padding: 10px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table th {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Zebra striping for better readability */
+.styled-table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Above and Beyond 2: Basic Responsive Design for smaller screens */
+@media (max-width: 600px) {
+    .main-container {
+        margin: 10px;
+        padding: 15px;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
